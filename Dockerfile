@@ -1,7 +1,8 @@
 FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
 WORKDIR /app
 COPY . .
-RUN dotnet publish MyTracker/MyTracker.csproj -c Release -o out
+RUN dotnet restore MyTracker/MyTracker.csproj
+RUN dotnet publish MyTracker/MyTracker.csproj -c Release -o out --no-restore
 
 FROM mcr.microsoft.com/dotnet/aspnet:10.0
 WORKDIR /app
