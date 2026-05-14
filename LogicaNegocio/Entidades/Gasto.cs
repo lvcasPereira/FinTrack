@@ -20,5 +20,7 @@ namespace LogicaNegocio.Entidades
             CategoriaId = CategoriaID;
             Fecha = fecha;
         }
+        protected Gasto() { }
+
     }
 }

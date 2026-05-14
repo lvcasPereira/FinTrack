@@ -14,5 +14,8 @@ namespace LogicaNegocio.Entidades
         
             Nombre = nombre;   
         }
+
+        protected Categoria() { }
+
     }
 }

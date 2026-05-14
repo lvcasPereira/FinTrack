@@ -16,6 +16,7 @@ namespace Infrastructura.Repositorios
         {
             _context = context;
         }
+
         public void Add(Categoria categoria)
         {
             _context.Add(categoria);
