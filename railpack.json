@@ -1,0 +1,10 @@
+{
+  "$schema": "https://schema.railpack.com",
+  "provider": "dotnet",
+  "build": {
+    "buildCommand": "dotnet publish MyTracker/MyTracker.csproj -c Release -o out"
+  },
+  "deploy": {
+    "startCommand": "dotnet out/MyTracker.dll"
+  }
+}
